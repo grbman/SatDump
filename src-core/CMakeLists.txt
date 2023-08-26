@@ -120,7 +120,7 @@ else()
 
     # FFTW3
     if(APPLE)
-        set(FFTW3f_DIR /usr/local/lib/cmake/fftw3f)
+        set(FFTW3f_DIR /opt/homebrew/Cellar/fftw/3.3.10_1/lib/cmake/fftw3)
         find_package(FFTW3f CONFIG REQUIRED)
         target_link_libraries(satdump_core PUBLIC FFTW3::fftw3f)
     else()
